@@ -19,7 +19,7 @@ import {
   } from "@mantine/core";
 import { MetamaskActions, MetaMaskContext } from "../../context/metamask";
 import { initiateFilecoinSnap, isFilecoinSnapInstalled } from "../../services/metamask";
-import { isMetamaskSnapsSupported, isSnapInstalled } from "@safient/wallet-adapter";
+import { isMetamaskSnapsSupported, isSnapInstalled } from "@safient/metasafe-adapter";
 import { IconAlertCircle, IconPlugConnected } from "@tabler/icons";
 //@ts-ignore
 import MetaMask from "../../assets/icons/flask.svg";

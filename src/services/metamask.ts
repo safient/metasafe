@@ -1,5 +1,5 @@
-import {SnapRpcMethodRequest} from "@safient/snap-types";
-import {enableFilecoinSnap, MetamaskSafientSnap, isSnapInstalled} from "@safient/wallet-adapter";
+import {SnapRpcMethodRequest} from "@safient/metasafe-types";
+import {enableFilecoinSnap, MetamaskSafientSnap, isSnapInstalled} from "@safient/metasafe-adapter";
 
 declare global {
     interface Window {

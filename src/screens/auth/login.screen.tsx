@@ -17,7 +17,7 @@ import {
   Loader,
   Container,
 } from "@mantine/core";
-import { SafientSnapApi, MessageStatus } from "@safient/snap-types";
+import { SafientSnapApi, MessageStatus } from "@safient/metasafe-types";
 import { GoogleButton, MetaMaskButton } from "../../components";
 import { OAuthProvider } from "@magic-ext/oauth";
 

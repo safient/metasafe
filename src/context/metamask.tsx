@@ -1,5 +1,5 @@
 import React, {createContext, Dispatch, PropsWithChildren, Reducer, useReducer} from "react";
-import {hasMetaMask, MetamaskSafientSnap} from "@safient/wallet-adapter";
+import {hasMetaMask, MetamaskSafientSnap} from "@safient/metasafe-adapter";
 
 interface IFilecoinSnap {
     isInstalled: boolean

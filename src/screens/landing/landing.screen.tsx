@@ -17,9 +17,9 @@ export function LandingScreen() {
 			<Container>
 				<NavBar />
 				<HeroSection />
-				<HowItWorksSection />
+				{/* <HowItWorksSection /> */}
 				<JoinCommunitySection />
-				<Faq />
+				{/* <Faq /> */}
 				<FooterSection />
 			</Container>
 		</LandingPageContainer>

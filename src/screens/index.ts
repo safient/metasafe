@@ -6,6 +6,7 @@ export * from "./vouchers/vouchers.screen";
 
 export * from "./profile/profile.screen";
 export * from "./voucher-details/voucher-details.screen";
+export * from "./recovery-details/recovery-details.screen";
 
 export * from "./create-recovery/create-recovery.screen";
 export * from "./redeem-voucher/redeem-voucher.screen";

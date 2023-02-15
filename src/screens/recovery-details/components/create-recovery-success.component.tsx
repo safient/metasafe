@@ -31,18 +31,22 @@ import {
 } from "react-share";
 import { showNotification } from "@mantine/notifications";
 import dayjs from "dayjs";
+import { VoucherDetailsShimmer } from "./voucher-details.shimmer";
 
 export const RecoveryCreationSuccess = () => {
 
   const { classes } = useStyles();
 
 
-  const { formData, accountDetails, setCreateStep } =
+  const { fetching, formData} =
   useRecoveryStore((state: any) => state);
 
 
   return (
     <>
+     {fetching ? (
+        <VoucherDetailsShimmer />
+      ) :
       <Container className={classes.box}>
         <Paper className={classes.formContainer} withBorder>
           <Group mb={30}>
@@ -100,21 +104,16 @@ export const RecoveryCreationSuccess = () => {
           <Paper radius="md" p="xl" withBorder>
               <Group position="apart">
               <Alert icon={<IconShieldCheck size={32} />} title="Guarded by Safient!" color="grape" radius="lg">
-      Your MetaMask wallet account is now protected by Safient. You or your beneficiary can now recover the wallet anytime in the future
+      Your MetaMask wallet account is now protected by Safient. You or your beneficiary can now recover the wallet anytime in the future.
+
+      You can recover/ inherit this wallet using our <a className={classes.link} target="_blank" href="https://wallet.safient.io/"> web wallet </a>
     </Alert>
               </Group>
             </Paper>
 
         </Paper>
-
-        <Container className={classes.progressbox}>
-          <ProgressStatus
-            title="Wallet Recovery Created Successfully 🎊"
-            description="The wallet recovery has beeen created. You or beneficiary can now recover the wallet anytime in the future"
-            status={100}
-          />
-        </Container>
       </Container>
+    }
     </>
   );
 };

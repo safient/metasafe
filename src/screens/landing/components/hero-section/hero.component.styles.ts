@@ -74,7 +74,7 @@ export const HeroSectionContainer = styled.section`
   .hero-image {
     align-items: flex-end;
     img {
-      width: 100%;
+      width: 70%;
     }
   }
   @media (max-width: 768px) {

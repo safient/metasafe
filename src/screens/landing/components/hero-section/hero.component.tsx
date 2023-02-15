@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Modal } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { HeroSectionContainer, useStyles } from "./hero.component.styles";
-import HeroImage from "../../assets/images/hero.png";
+import HeroImage from "../../assets/images/metasafe.svg";
 import { StyledSpan } from "../common/span/span.component";
 import { Button } from "../common/button/button.component";
 import { WaitListForm } from "./mailchimp";
@@ -24,11 +24,11 @@ export function HeroSection() {
       <div className="hero">
         <div className="hero-form">
           <h1>
-            Gift <StyledSpan> Crypto </StyledSpan> with Safient
-            <StyledSpan> Voucher</StyledSpan>{" "}
+            Create <StyledSpan> Recovery </StyledSpan> with Safient
+            <StyledSpan> MetaMask </StyledSpan>{" "} Snap
           </h1>
           <p className="sub-heading">
-            Safest and convenient way to gift crypto 🎁
+            Create a recovery for your MetaMask wallets now 🎁
           </p>
           <div className="form-group">
             {/* <input
@@ -56,7 +56,6 @@ export function HeroSection() {
             </Modal>
             ;
           </div>
-          <p>Start gifting crypto by creating a voucher now 🚀</p>
         </div>
         <div className="hero-image">
           <img src={HeroImage} alt="Person with voucher" />

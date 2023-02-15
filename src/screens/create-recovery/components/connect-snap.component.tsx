@@ -25,7 +25,7 @@ import useRecoveryStore from "store/recovery/recovery.store";
 import { Wallet, AddressUtil } from "utils";
 import { useNavigate } from "react-router-dom";
 import { MetaMaskContext } from "context/metamask";
-import { SafientSnapApi } from "../../../../../snap/packages/types";
+import { SafientSnapApi } from "@safient/metasafe-types";
 import { MetaMaskConnector } from "components/MetaMaskConnector/MetaMaskConnector";
 
 export interface AccountProps {

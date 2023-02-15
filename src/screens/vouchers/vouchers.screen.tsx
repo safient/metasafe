@@ -21,7 +21,7 @@ export const VouchersScreen = () => {
   const wallet = new Wallet();
   const { safeService } = useServices();
   const { accountStore } = useStores();
-  const { setFetching, setRecoveryDetails } = useRecoveryStore(
+  const { setFetching, setFormData, setRecoveryDetails } = useRecoveryStore(
     (state: any) => state
   );
 
@@ -47,6 +47,7 @@ export const VouchersScreen = () => {
         expirationTime: voucher.data?.claim.period,
         timeStamp: voucher.data?.timeStamp
       });
+      setFormData({title: voucher.data?.safeName,  description: voucher.data?.description})
       setFetching(false);
       navigate(RoutePath.recoveryDetails);
     }
@@ -74,7 +75,7 @@ export const VouchersScreen = () => {
           <GenericCard
             title="Recover"
             name="redeem"
-            onClick={() => setModalActive(true)}
+            onClick={() => window.location.href = "https://wallet.safient.io"}
           />
         </div>
 

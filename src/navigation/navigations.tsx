@@ -5,7 +5,7 @@ import {
   LoginScreen,
   ProfileScreen,
   VouchersScreen,
-  VoucherDetailsScreen,
+  RecoveryDetailsScreen,
   CreateRecoveryScreen,
   LandingScreen,
   TeamsScreen,
@@ -33,7 +33,7 @@ export const Navigation = () => {
       <Route path={RoutePath.callback} element={<CallBackScreen />} />
       <Route
         path={RoutePath.recoveryDetails}
-        element={<VoucherDetailsScreen />}
+        element={<RecoveryDetailsScreen />}
       />
 
       <Route element={<RequireAuth />}>

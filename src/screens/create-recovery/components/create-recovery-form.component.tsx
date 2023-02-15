@@ -27,7 +27,7 @@ import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import {  } from "services";
 import { MetaMaskContext } from "context/metamask";
-import { SafientSnapApi } from "../../../../../snap/packages/types";
+import { SafientSnapApi } from "@safient/metasafe-types";
 import { Enums } from "@safient/core";
 //@ts-ignore
 import Flask from "../../../assets/icons/flask.svg";

@@ -51,7 +51,7 @@ export const CreateRecoveryForm = () => {
   const [progressStage, setProgressStage] = useState(0);
 
 
-  const [signalingPeriod, setSignalingPeriod] = useState(300);
+  const [signalingPeriod, setSignalingPeriod] = useState(30);
 
   const [isBeneficiary, setIsBeneficiary] = useState(false);
   const [walletBeneficiary, setWalletBeneficiary]: any = useState('');
@@ -245,11 +245,21 @@ export const CreateRecoveryForm = () => {
                 onChange={(value) => setClaimType(parseInt(value!))}
               />
               {/* render feilds based on selected values */}
-              <DatePicker
+              {/* <DatePicker
                 placeholder="Select DDAY date"
                 label="Select DDay Date 
 "
-              />
+              /> */}
+
+          <TextInput
+            type="text"
+            placeholder={signalingPeriod.toString()}
+            label="Signaling period (Seconds)"
+            rightSectionWidth={92}
+            onChange={(event) => {
+              setSignalingPeriod(parseInt(event.target.value));
+            }}
+          />
 
           <Alert>
             This will create a wallet using signaling method with 300 sec

@@ -92,7 +92,7 @@ export const VouchersScreen = () => {
                     mt={"lg"}
                     onClick={() => navigate(RoutePath.login)}
                   >
-                    Login to use MetaSnap
+                    Login to use MetaSafe
                   </Button>}
                 </Stack>
               </Center>

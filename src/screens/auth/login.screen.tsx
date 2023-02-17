@@ -136,7 +136,7 @@ export function LoginScreen(props: any) {
       >
         <Paper radius="md" p="xl" sx={{ width: "500px" }} withBorder {...props}>
           <Text size="lg" weight={900}>
-            Welcome to MetaSanp👋
+            Welcome to MetaSafe👋
           </Text>
 
           {errorMessage.length > 0 && (

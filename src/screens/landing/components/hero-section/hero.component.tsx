@@ -28,7 +28,7 @@ export function HeroSection() {
             <StyledSpan> MetaMask </StyledSpan>{" "} Snap
           </h1>
           <p className="sub-heading">
-            Create a recovery for your MetaMask wallets now 🎁
+            Create a recovery for your MetaMask wallets now 🛡️
           </p>
           <div className="form-group">
             {/* <input

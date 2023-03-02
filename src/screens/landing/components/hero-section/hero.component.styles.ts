@@ -21,7 +21,7 @@ export const useStyles = createStyles((theme) => ({
 }));
 
 export const HeroSectionContainer = styled.section`
-  height: 80vh;
+  height: 50vh;
   img {
     width: 80%;
   }

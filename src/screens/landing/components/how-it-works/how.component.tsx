@@ -5,16 +5,21 @@ import { HowItWorksContainer, Steps } from "./how.component.styles";
 import Step1 from "../../assets/images/step-1.png";
 import Step2 from "../../assets/images/step-2.png";
 import Step3 from "../../assets/images/step-3.png";
+import YoutubeEmbed from "../video/youtube";
 
 export function HowItWorksSection() {
   return (
     <HowItWorksContainer>
       <Title centered>How It Works?</Title>
       <SubTitle centered className="sub-heading">
-        We have 3 simple steps 🪜
+        Follow these simple steps to get started 🪜
+
+        <YoutubeEmbed embedId="XqhpTgqdWDk" />
       </SubTitle>
 
-      <Steps>
+      
+
+      {/* <Steps>
         <div class="step-text-box">
           <p class="step-number">01</p>
           <h3 class="heading-tertiary">Create Voucher</h3>
@@ -53,7 +58,7 @@ export function HowItWorksSection() {
         <div class="step-img-box">
           <Image src={Step3} alt="sss" class="step-img" />
         </div>
-      </Steps>
+      </Steps> */}
     </HowItWorksContainer>
   );
 }

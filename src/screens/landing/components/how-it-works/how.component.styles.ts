@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HowItWorksContainer = styled.section`
   .sub-heading {
     margin-top: 1rem;
+    padding: 2rem;
   }
   .steps {
     display: flex;
